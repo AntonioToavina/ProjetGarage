@@ -72,40 +72,22 @@ CREATE TABLE TraitementService(
 );
 
 --Donnee de test 
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation bougie',10000);1
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Paralellisme',12000);2
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation circuit',15000);3
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Remplacer filtre',15000);4
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Vidange',10000);5
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Maintenance général',10000);6
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation phares',10000);7
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation freinage',10000);8
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Dépanage pneu',10000);9
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Diagnostic circuit',30000);10
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Nettoyage',6000);11
+INSERT INTO Service(nomservice, prixHoraire) VALUES('Vidange',10000);
+INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation bougie',10000);
+INSERT INTO Service(nomservice, prixHoraire) VALUES('Paralellisme',12000);
+INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation circuit',15000);
+INSERT INTO Service(nomservice, prixHoraire) VALUES('Remplacer filtre',15000);
 
-INSERT INTO Specialite(libelle) VALUES('Electricien');
-INSERT INTO Specialite(libelle) VALUES('Mécanicien');
-INSERT INTO Specialite(libelle) VALUES('Agent Entretien');
-INSERT INTO Specialite(libelle) VALUES('Dépanneur');
-INSERT INTO Specialite(libelle) VALUES('Assistant mécano');
-INSERT INTO Specialite(libelle) VALUES('Assistant élec');
-
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(1,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(2,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(2,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(3,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(4,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(5,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(6,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(7,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(8,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(9,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(10,1);
-INSERT INTO TraitementService(idservice, idspecialite) VALUES(11,1);
-
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,2,1);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,3,0.5);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(2,1,0.5);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(2,2,0.5);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(3,2,1);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(4,1,1);
+INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(5,2,1);
 
 -- vue v_service: Service + Specialite + TraitementService
 
--- CREATE VIEW v_service AS SELECT * FROM (SELECT Specialite* FROM Specialite join TraitementService ON idspecialite = TraitementService.idspecialite) JOIN Service ON idservice = Specialite.specialite;
+CREATE VIEW v_traitement AS SELECT Specialite.*,idservice,duree FROM Specialite join TraitementService ON Specialite.idspecialite = TraitementService.idspecialite;
+CREATE VIEW v_service AS SELECT v_traitement.*,nomservice,prixHoraire FROM v_traitement JOIN Service ON v_traitement.idservice = Service.idservice;
 
