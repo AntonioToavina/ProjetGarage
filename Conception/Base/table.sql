@@ -5,7 +5,8 @@ CREATE TABLE NiveauEtude(
 
 CREATE TABLE Specialite(
     idspecialite serial PRIMARY KEY,
-    libelle varchar(20) NOT NULL
+    libelle varchar(20) NOT NULL,
+    salaireHoraire double precision NOT NULL
 );
 
 CREATE TABLE Employe(
@@ -32,12 +33,12 @@ INSERT INTO NiveauEtude(libelle) VALUES('Licence');
 INSERT INTO NiveauEtude(libelle) VALUES('Master');
 INSERT INTO NiveauEtude(libelle) VALUES('Bepc');
 
-INSERT INTO Specialite(libelle) VALUES('Electricien');
-INSERT INTO Specialite(libelle) VALUES('Mécanicien');
-INSERT INTO Specialite(libelle) VALUES('Agent Entretien');
-INSERT INTO Specialite(libelle) VALUES('Dépanneur');
-INSERT INTO Specialite(libelle) VALUES('Assistant mécano');
-INSERT INTO Specialite(libelle) VALUES('Assistant élec');
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Electricien',30000);
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Mécanicien',30000);
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Agent Entretien',10000);
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Dépanneur',20000);
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Assistant mécano',15000);
+INSERT INTO Specialite(libelle, salaireHoraire) VALUES('Assistant élec',15000);
 
 INSERT INTO Employe(nom, prenom, datenaissance, idniveauetude) VALUES('Rakotomalala','Pierre','13-01-2000',2);
 INSERT INTO Employe(nom, prenom, datenaissance, idniveauetude) VALUES('Ramaria','Jean Paul','19-11-1995',3);
@@ -72,11 +73,11 @@ CREATE TABLE TraitementService(
 );
 
 --Donnee de test 
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Vidange',10000);
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation bougie',10000);
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Paralellisme',12000);
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Réparation circuit',15000);
-INSERT INTO Service(nomservice, prixHoraire) VALUES('Remplacer filtre',15000);
+INSERT INTO Service(nomservice) VALUES('Vidange');
+INSERT INTO Service(nomservice) VALUES('Réparation bougie');
+INSERT INTO Service(nomservice) VALUES('Paralellisme');
+INSERT INTO Service(nomservice) VALUES('Réparation circuit');
+INSERT INTO Service(nomservice) VALUES('Remplacer filtre');
 
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,2,1);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,3,0.5);
