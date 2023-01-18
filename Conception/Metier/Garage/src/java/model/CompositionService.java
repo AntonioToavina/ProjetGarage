@@ -5,13 +5,33 @@
  */
 package model;
 
-public class Specialite {
-    
+/**
+ *
+ * @author ITU
+ */
+public class CompositionService {
+    private int idservice;
+    private String nomService;
     private int idSpecialite;
     private String libelle;
     private double salaireHoraire;
-    
-    
+    private double duree;
+
+    public int getIdservice() {
+        return idservice;
+    }
+
+    public void setIdservice(int idservice) {
+        this.idservice = idservice;
+    }
+
+    public String getNomService() {
+        return nomService;
+    }
+
+    public void setNomService(String nomService) {
+        this.nomService = nomService;
+    }
 
     public int getIdSpecialite() {
         return idSpecialite;
@@ -36,4 +56,14 @@ public class Specialite {
     public void setSalaireHoraire(double salaireHoraire) {
         this.salaireHoraire = salaireHoraire;
     }
+
+    public double getDuree() {
+        return duree;
+    }
+
+    public void setDuree(double duree) {
+        this.duree = duree;
+    }
+    
+    
 }

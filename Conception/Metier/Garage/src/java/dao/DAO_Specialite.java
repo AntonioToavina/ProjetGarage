@@ -34,6 +34,7 @@ public class DAO_Specialite {
             s = new Specialite();
             s.setIdSpecialite(res.getInt("idspecialite"));
             s.setLibelle(res.getString("libelle"));
+            s.setSalaireHoraire(res.getDouble("salairehoraire"));
             allSpecialite.add(s);
         }
         if(isOpen == true) {
@@ -48,7 +49,7 @@ public class DAO_Specialite {
         Connection connect = con.getConnexion("garage", "postgres", "pg");
         
         String libelle = s.getLibelle();
-        String sql = "insert into specialite(libelle) values('" + libelle + "')";
+        String sql = "insert into specialite(libelle) values('" + libelle + "'," + String.valueOf(s.getSalaireHoraire()) + ")";
         Statement stmt = connect.createStatement();
         stmt.executeUpdate(sql);
         connect.close();

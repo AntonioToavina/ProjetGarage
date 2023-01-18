@@ -6,6 +6,7 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.Statement;
 import model.Employe;
 
 public class DAO_Employe {
@@ -13,5 +14,14 @@ public class DAO_Employe {
 /// insert nouveau employe
         Connexion con = new Connexion();
         Connection connect = con.getConnexion("garage", "postgres", "pg");
+        String sql = "insert into employe(nom, prenom, datenaissance, idniveauetude) values(";
+        sql += "'" + e.getNom() + "',";
+        sql += "'" + e.getPrenom() + "',";
+        sql += "'" + String.valueOf(e.getDateNaissance()) + "',";
+        sql += String.valueOf(e.getNiveauEtude().getIdNiveauEtude()) + ")";
+        
+        Statement stmt = connect.createStatement();
+        stmt.executeUpdate(sql);
+        connect.close();
     }
 }

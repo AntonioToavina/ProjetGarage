@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Connexion {
-    Connection getConnexion(String bdd, String user, String passwd) throws Exception {
+    public Connection getConnexion(String bdd, String user, String passwd) throws Exception {
         Class.forName("org.postgresql.Driver");
         Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + bdd, user, passwd);
 
