@@ -74,19 +74,11 @@ CREATE TABLE TraitementService(
 );
 
 --Donnee de test 
-<<<<<<< Updated upstream
-INSERT INTO Service(nomservice) VALUES('Vidange');
-INSERT INTO Service(nomservice) VALUES('Réparation bougie');
-INSERT INTO Service(nomservice) VALUES('Paralellisme');
-INSERT INTO Service(nomservice) VALUES('Réparation circuit');
-INSERT INTO Service(nomservice) VALUES('Remplacer filtre');
-=======
 INSERT INTO Service(nomservice, prixHoraire,taux) VALUES('Vidange',10000,20);
 INSERT INTO Service(nomservice, prixHoraire,taux) VALUES('Réparation bougie',10000,20);
 INSERT INTO Service(nomservice, prixHoraire,taux) VALUES('Paralellisme',12000,20);
 INSERT INTO Service(nomservice, prixHoraire,taux) VALUES('Réparation circuit',15000,29);
 INSERT INTO Service(nomservice, prixHoraire,taux) VALUES('Remplacer filtre',15000,20);
->>>>>>> Stashed changes
 
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,2,1);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,3,0.5);
