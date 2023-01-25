@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/Specialite.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_CompositionMateriel.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_CompositionService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/Template/Header.jsp</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_NiveauEtude.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/CompositionMateriel.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_CompositionService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/NiveauEtude.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_Specialite.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_Employe.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/Connexion.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/Page/Prixservice.jsp</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_Specialite.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_PrixService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_Employe.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_Service.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/Service.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_Specialite.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/Taux.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_CompositionMateriel.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/TraitementService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/Page/Home.jsp</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_ListEmploye.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_Service.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Main/Main.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_NewEmploye.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_NiveauEtude.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/DepenseMateriel_Service.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/Materiel.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/CompositionService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Metier/M_Taux.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/Admin.jsp</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/index.jsp</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/Employe.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_Taux.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Model/PrixService.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/DAO/DAO_Service.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/src/java/Controller/Controller_ModifTaux.java</file>
+            <file>file:/home/antonio/ITU/Baovola/Garage/Garage/web/Page/ModifTaux.jsp</file>
+        </group>
+    </open-files>
+</project-private>

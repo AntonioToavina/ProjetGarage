@@ -3,13 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/dao/Connexion.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/dao/DAO_Employe.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/metier/M_Specialite.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/metier/M_NiveauEtude.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/dao/DAO_Specialite.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/dao/DAO_NiveauEtude.java</file>
-            <file>file:/D:/Documents/NetBeansProjects/Garage/src/java/metier/M_Employe.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/model/Employe.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_CompositionService.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/Connexion.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/controller/Controller_Service.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/web/Page/result.jsp</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_NiveauEtude.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/web/Page/service.jsp</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/Main/Main.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_Specialite.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_Service.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/controller/Controller_ListeEmploye.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_CompositionMateriel.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/controller/Controller_Specialite.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/web/Page/insert.jsp</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/controller/Controller_NewEmploye.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/metier/M_Employe.java</file>
+            <file>file:/home/antonio/RepoGitHub/ProjetGarage/Conception/Metier/Garage/src/java/dao/DAO_Employe.java</file>
         </group>
     </open-files>
 </project-private>
