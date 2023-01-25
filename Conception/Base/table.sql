@@ -57,36 +57,4 @@ CREATE TABLE DepenseMateriel_Service(
     volumeconsommation double precision NOT NULL 
 );
 
-INSERT INTO Materiel(nom,prixconsommation,unite) values('Huile moteur',8000,'litre'),
-                                                ('Machine',20000 ,'heure'),
-                                                ('Soudure',20000,'heure'),
-                                                ('Electricite',30000,'heure');
-
-INSERT INTO DepenseMateriel_Service(idmateriel,idservice,volumeconsommation) VALUES
-    (1,1,20),
-    (2,1,1),
-
-    (3,2,3),
-
-    (3,3,2),
-
-    (4,4,4),
-
-    (2,5,2);
-
-
----- Vue v_depenseMateriel
-CREATE OR REPLACE VIEW v_depenseMateriel AS
-SELECT 
-    ds.*,
-    m.nom as nommateriel,
-    m.prixconsommation,
-    m.unite,
-    s.nomservice,
-    s.prixhoraire
-FROM 
-    Materiel m 
-    join DepenseMateriel_Service ds on m.idmateriel=ds.idmateriel
-    join Service s on ds.idservice=s.idservice;
-
 

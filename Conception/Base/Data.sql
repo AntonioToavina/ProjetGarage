@@ -30,12 +30,32 @@ INSERT INTO Employe_specialite(idemploye, idspecialite) VALUES(7,6);
 INSERT INTO Employe_specialite(idemploye, idspecialite) VALUES(8,3);
 
 
+
+
 --Donnee de test 
 INSERT INTO Service(nomservice) VALUES('Vidange');
 INSERT INTO Service(nomservice) VALUES('Réparation bougie');
 INSERT INTO Service(nomservice) VALUES('Paralellisme');
 INSERT INTO Service(nomservice) VALUES('Réparation circuit');
 INSERT INTO Service(nomservice) VALUES('Remplacer filtre');
+
+INSERT INTO Materiel(nom,prixconsommation,unite) values('Huile moteur',8000,'litre'),
+                                                ('Machine',20000 ,'heure'),
+                                                ('Soudure',20000,'heure'),
+                                                ('Electricite',30000,'heure');
+
+
+INSERT INTO DepenseMateriel_Service(idmateriel,idservice,volumeconsommation) VALUES
+    (1,1,20),
+    (2,1,1),
+
+    (3,2,3),
+
+    (3,3,2),
+
+    (4,4,4),
+
+    (2,5,2);
 
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,2,1);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(1,3,0.5);
