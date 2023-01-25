@@ -27,7 +27,7 @@ CREATE TABLE Service(
     idservice integer PRIMARY KEY default(nextval('s_service')),
     nomservice varchar(20) NOT NULL,
     prixHoraire double precision,
-    taux double precision NOT NULL default 20
+    taux double precision NOT NULL default 0.2
 );
 
 CREATE TABLE TraitementService(
@@ -36,12 +36,6 @@ CREATE TABLE TraitementService(
     idspecialite integer NOT NULL references Specialite(idspecialite),
     duree double precision
 );
-
-CREATE TABLE Taux(
-    idtaux serial PRIMARY KEY,
-    taux double precision 
-);
-
 
 CREATE TABLE Materiel(
     idmateriel serial PRIMARY KEY,
@@ -58,3 +52,6 @@ CREATE TABLE DepenseMateriel_Service(
 );
 
 
+Creer table et donnee de test
+- typeAuto(idtype,nom)
+- piece(idpiece,nompiece,prix,idtype(typeAuto))
