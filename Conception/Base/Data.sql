@@ -64,5 +64,3 @@ INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(2,2,0.5);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(3,2,1);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(4,1,1);
 INSERT INTO TraitementService(idservice, idspecialite, duree) VALUES(5,2,1);        
-
-INSERT INTO Taux values(1,0.2);
